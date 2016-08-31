@@ -1,18 +1,18 @@
 {
-  "name": "SessionMan",
-  "version": "0.1",
+  "name": "TabMan",
   "description": "Allows you to close tabs on other devices (syncs via own server b/c the Chrome API only allows reading sessions).",
+  "version": "0.1",
+  "permissions": ["sessions", "tabs"],
   "background": {
     "persistent": false,
     "scripts": ["background.js"]
   },
-  "permissions": ["sessions", "tabs"],
+  "browser_action": {
+    "default_title": "Manage sessions/tabs",
+    "default_icon": "icon.png"
+  },
   "commands": {
-    "toggle-pin": {
-      "suggested_key": { "default": "Alt+Shift+T" },
-      "description": "Toggle tab pin"
-    },
-    "get-foo": {
+    "log-tabs": {
       "suggested_key": { "default": "Alt+Shift+P" },
       "description": "List all tabs on other devices"
     }
