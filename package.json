@@ -1,0 +1,10 @@
+{
+  "name": "TabMan",
+  "version": "0.1.0",
+  "dependencies": {
+    "@types/chrome": "0.0.38"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.5"
+  }
+}

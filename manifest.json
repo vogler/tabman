@@ -2,21 +2,24 @@
   "name": "TabMan",
   "description": "Allows you to close tabs on other devices (syncs via own server b/c the Chrome API only allows reading sessions).",
   "version": "0.1",
-  "permissions": ["sessions", "tabs"],
+  "permissions": [
+    "sessions",
+    "tabs",
+    "storage"
+  ],
   "background": {
-    "persistent": false,
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
   },
   "browser_action": {
     "default_title": "Manage sessions/tabs",
+    "default_popup": "popup.html",
     "default_icon": "icon128.png"
   },
-  "commands": {
-    "log-tabs": {
-      "suggested_key": { "default": "Alt+Shift+P" },
-      "description": "List all tabs on other devices"
-    }
+  "icons": {
+    "128": "icon128.png"
   },
-  "icons": { "128": "icon128.png" },
   "manifest_version": 2
 }
