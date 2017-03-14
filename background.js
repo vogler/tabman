@@ -4,12 +4,12 @@ chrome.signedInDevices.get(true, function (x) {
 });
 
 chrome.storage.onChanged.addListener(function (changes, namespace) {
-	for (key in changes) {
-		var x = changes[key];
+	for (let key in changes) {
+		let x = changes[key];
 		// console.log('Storage key', key, 'in namespace', namespace, 'changed from', x.oldValue, 'to', x.newValue);
 		// TODO apparently there's no way to find out the current device name
 		// https://developer.chrome.com/extensions/signedInDevices
-		var close = x.newValue;
+		let close = x.newValue;
 		console.log(thisDevice);
 		for (device in close) {
 			console.log(device, close);
