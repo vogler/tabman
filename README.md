@@ -44,3 +44,5 @@ Tested extensions:
   - click to open saved window on other device
 - [OneTab](http://www.one-tab.com/)
 - [The Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg)
+- [Tabs Outliner](https://chrome.google.com/webstore/detail/tabs-outliner/eggkanocgddhmamlbiijnphhppkpkmkl)
+- [Workona](https://workona.com/)
